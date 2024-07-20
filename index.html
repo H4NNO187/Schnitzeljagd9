@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Schnitzeljagd</title>
+</head>
+<body>
+   <h1 style="text-align: center">Hallo Malle!</h1>
+   <br>
+   <p style="text-align: center;">Das hier ist der erste Hinweis der Schnitzeljagd!</p>
+   
+   <h2 id="quiz">Frage</h2>
+  <h3>Frage zum Sommerfest</h3>
+  <button onclick="falscheAntwortSocialBots()">Falsche Antwort</button>
+  <button onclick="falscheAntwortSocialBots()">Falsche Antwort</button>
+  <button onclick="richtigeAntwortSocialBots()">Richtige Antwort</button>
+  <p id="outputSocialBots"></p>
+    
+    
+  <script>
+    const el1 = document.getElementById("outputSocialBots");
+    function falscheAntwortSocialBots() {
+el1.innerHTML = "Falsch!";
+    el1.style.color = "green"
+    }
+    function richtigeAntwortSocialBots() {
+      el1.innerHTML = "Richtig!";
+      el1.style.color = "green"
+    }
+
+  </script>
+   
+</body>
+</html>
